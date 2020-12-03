@@ -9,7 +9,6 @@ def count_trees(file):
     with open(file, "r") as f:
         rows = [line.rstrip() for line in f.readlines()]
         len_rows = len(rows)
-        print(rows)
         max_idx_right = ceil((len_rows * 3)/len(rows[0]))
         rows = [row * max_idx_right for row in rows]
         right = 0
